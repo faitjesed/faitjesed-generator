@@ -1,0 +1,29 @@
+{
+  "name": "create-faitjesed-generator-app",
+  "version": "1.0.0",
+  "description": "CLI for generating faitjesed Node.js services",
+  "type": "module",
+  "bin": {
+    "create-faitjesed-generator-app": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "dependencies": {
+    "fs-extra": "^11.3.5",
+    "kleur": "^4.1.5",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.0.0",
+    "@types/prompts": "^2.4.9",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.0"
+  }
+}
