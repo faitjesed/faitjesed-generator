@@ -5,8 +5,7 @@ import { validateProjectName, getTemplatePath, logger, patchPackageJson, copyTem
 export async function createProject(projectName: string) {
     validateProjectName(projectName);
 
-    const cwd = process.cwd();
-    const targetDir = path.join(cwd, projectName);
+    const targetDir = path.resolve(projectName);
 
     const response = await prompts({
         type: 'select',
@@ -21,7 +20,7 @@ export async function createProject(projectName: string) {
 
     await copyTemplate(templateDir, targetDir);
 
-    logger.info(`\nCreating project in:, ${targetDir}`);
+    logger.info(`\nCreating project in: ${targetDir}`);
 
     await patchPackageJson(targetDir, projectName);
 

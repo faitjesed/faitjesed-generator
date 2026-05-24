@@ -11,7 +11,7 @@
   },
   "files": [
     "dist",
-    "templates"
+    "templates/**"
   ],
   "dependencies": {
     "fs-extra": "^11.3.5",
