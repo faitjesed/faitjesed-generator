@@ -1,6 +1,6 @@
 {
   "name": "create-faitjesed-generator-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI for generating faitjesed Node.js services",
   "type": "module",
   "bin": {
