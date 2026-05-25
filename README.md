@@ -21,4 +21,4 @@ A CLI tool for generating Node.js backend projects (Fastify + TypeScript + TypeO
 No installation required (recommended):
 
 ```bash
-npx create-faitjesed-generator-app my-app
+npx create-faitjesed-generator-app@latest my-app
