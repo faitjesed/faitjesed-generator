@@ -4,23 +4,24 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "lib": ["es2021", "es5", "es6"],
+    "target": "ES2022",
+    "lib": ["ES2022"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "dist",
     "rootDir": "src",
     "strict": true,
     "skipLibCheck": true,
+    "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
-    "types": ["node"]
+    "types": ["node"],
   },
   "include": [
     "src"

@@ -4,9 +4,9 @@
   "description": "This fastify app is created with create-faitjesed-generator-app",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/app/app",
-    "build": "tsc",
-    "start": "node dist/app/app",
+    "dev": "tsx watch src/app/app.ts",
+    "build": "tsc && tsc-alias",
+    "start": "node dist/app/app.js",
     "lint": "eslint . --fix",
     "format": "prettier --write src/**/*.ts"
   },
@@ -38,6 +38,7 @@
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.53.1"
+    "typescript-eslint": "^8.53.1",
+    "tsc-alias": "^1.8.17"
   }
 }
