@@ -1,5 +1,5 @@
 import { configDotenv } from 'dotenv';
-import { BaseConfiguration } from '@/types';
+import type { BaseConfiguration } from '@/types';
 
 configDotenv();
 

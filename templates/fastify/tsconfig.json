@@ -8,11 +8,10 @@
     "lib": ["ES2022"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "outDir": "dist",
     "rootDir": "src",
-    "strict": true,
     "skipLibCheck": true,
     "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
@@ -21,9 +20,10 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
-    "types": ["node"],
+    "types": ["node"]
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"],
+  "tsc-alias": {
+    "resolveFullPaths": true
+  }
 }
